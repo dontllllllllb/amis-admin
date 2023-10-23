@@ -1,6 +1,6 @@
 {
   "type": "page",
-  "title": "查看详情 ${params.id}",
+  "title": "查看详情",
   "remark": null,
   "toolbar": [
     {
@@ -18,46 +18,27 @@
         {
           "type": "static",
           "name": "engine",
-          "label": "Engine"
-        },
-        {
-          "type": "divider"
+          "label": "引擎"
         },
         {
           "type": "static",
           "name": "browser",
-          "label": "Browser"
-        },
-        {
-          "type": "divider"
+          "label": "浏览器"
         },
         {
           "type": "static",
           "name": "platform",
-          "label": "Platform(s)"
-        },
-        {
-          "type": "divider"
+          "label": "平台"
         },
         {
           "type": "static",
           "name": "version",
-          "label": "Engine version"
-        },
-        {
-          "type": "divider"
+          "label": "版本"
         },
         {
           "type": "static",
           "name": "grade",
-          "label": "CSS grade"
-        },
-        {
-          "type": "divider"
-        },
-        {
-          "type": "html",
-          "html": "<p>添加其他 <span>Html 片段</span> 需要支持变量替换（todo）.</p>"
+          "label": "级别"
         }
       ]
     }

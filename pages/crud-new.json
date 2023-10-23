@@ -17,11 +17,15 @@
       "redirect": "/crud/list",
       "name": "sample-edit-form",
       "api": "${API_HOST}/api/amis-mock/sample",
+      "mode": "horizontal",
+      "horizontal": {
+        "leftFixed": "xs"
+      },
       "controls": [
         {
           "type": "text",
           "name": "engine",
-          "label": "Engine",
+          "label": "引擎",
           "required": true,
           "inline": false,
           "description": "",
@@ -30,38 +34,26 @@
           "addOn": null
         },
         {
-          "type": "divider"
-        },
-        {
           "type": "text",
           "name": "browser",
-          "label": "Browser",
+          "label": "浏览器",
           "required": true
-        },
-        {
-          "type": "divider"
         },
         {
           "type": "text",
           "name": "platform",
-          "label": "Platform(s)",
+          "label": "平台",
           "required": true
-        },
-        {
-          "type": "divider"
         },
         {
           "type": "text",
           "name": "version",
-          "label": "Engine version"
-        },
-        {
-          "type": "divider"
+          "label": "版本"
         },
         {
           "type": "text",
           "name": "grade",
-          "label": "CSS grade"
+          "label": "级别"
         }
       ]
     }

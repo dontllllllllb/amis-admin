@@ -8,7 +8,7 @@
       "type": "button",
       "actionType": "link",
       "link": "/crud/new",
-      "label": "新增",
+      "label": "+ 新增",
       "primary": true
     }
   ],
@@ -26,7 +26,7 @@
           {
             "type": "text",
             "name": "keywords",
-            "placeholder": "通过关键字搜索",
+            "placeholder": "请输入",
             "addOn": {
               "label": "搜索",
               "type": "submit",
@@ -70,33 +70,30 @@
       ],
       "columns": [
         {
-          "name": "engine",
-          "label": "Rendering engine",
-          "sortable": true
-        },
-        {
           "name": "id",
           "label": "ID",
           "width": 20,
           "sortable": true
         },
         {
+          "name": "engine",
+          "label": "引擎"
+        },
+        {
           "name": "browser",
-          "label": "Browser",
-          "sortable": true
+          "label": "浏览器"
         },
         {
           "name": "platform",
-          "label": "Platform(s)",
-          "sortable": true
+          "label": "平台"
         },
         {
           "name": "version",
-          "label": "Engine version"
+          "label": "版本"
         },
         {
           "name": "grade",
-          "label": "CSS grade"
+          "label": "级别"
         },
         {
           "type": "operation",
@@ -104,31 +101,26 @@
           "width": "",
           "buttons": [
             {
-              "type": "button-group",
-              "buttons": [
-                {
-                  "type": "button",
-                  "label": "查看",
-                  "level": "primary",
-                  "actionType": "link",
-                  "link": "/crud/${id}"
-                },
-                {
-                  "type": "button",
-                  "label": "修改",
-                  "level": "info",
-                  "actionType": "link",
-                  "link": "/crud/${id}/edit"
-                },
-                {
-                  "type": "button",
-                  "label": "删除",
-                  "level": "danger",
-                  "actionType": "ajax",
-                  "confirmText": "您确认要删除?",
-                  "api": "delete:${API_HOST}/api/amis-mock/sample/$id"
-                }
-              ]
+              "type": "button",
+              "label": "查看",
+              "level": "primary",
+              "actionType": "link",
+              "link": "/crud/${id}"
+            },
+            {
+              "type": "button",
+              "label": "修改",
+              "level": "info",
+              "actionType": "link",
+              "link": "/crud/${id}/edit"
+            },
+            {
+              "type": "button",
+              "label": "删除",
+              "level": "danger",
+              "actionType": "ajax",
+              "confirmText": "您确认要删除?",
+              "api": "delete:${API_HOST}/api/amis-mock/sample/$id"
             }
           ],
           "placeholder": "-",

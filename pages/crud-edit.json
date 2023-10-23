@@ -1,6 +1,6 @@
 {
   "type": "page",
-  "title": "修改 ${params.id}",
+  "title": "修改",
   "remark": null,
   "toolbar": [
     {
@@ -20,7 +20,7 @@
         {
           "type": "text",
           "name": "engine",
-          "label": "Engine",
+          "label": "引擎",
           "required": true
         },
         {
@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "browser",
-          "label": "Browser",
+          "label": "浏览器",
           "required": true
         },
         {
@@ -38,7 +38,7 @@
         {
           "type": "text",
           "name": "platform",
-          "label": "Platform(s)",
+          "label": "平台",
           "required": true
         },
         {
@@ -47,7 +47,7 @@
         {
           "type": "text",
           "name": "version",
-          "label": "Engine version"
+          "label": "版本"
         },
         {
           "type": "divider"
@@ -55,7 +55,7 @@
         {
           "type": "select",
           "name": "grade",
-          "label": "CSS grade",
+          "label": "级别",
           "options": ["A", "B", "C", "D", "X"]
         }
       ]
